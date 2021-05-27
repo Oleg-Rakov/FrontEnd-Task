@@ -1,0 +1,39 @@
+.container {
+  max-width: 1312px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 152px;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+  color: #4f586b;
+  padding-bottom: 56px;
+}
+
+.hidden {
+  display: none;
+}
+
+.sliderContainer {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    padding-top: 64px;
+    padding-left: 16px;
+  }
+  .title {
+    display: none;
+  }
+  .hidden {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: rgba(79, 88, 107, 1);
+  }
+}

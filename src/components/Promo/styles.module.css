@@ -1,0 +1,61 @@
+.promo {
+  margin-top: 168px;
+  background: url('../../assets/images/bg-image.png') no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 568px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1312px;
+  width: 100%;
+  padding-top: 104px;
+  padding-left: 16px;
+  margin: 0 auto;
+}
+
+.title {
+  max-width: 528px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.description {
+  max-width: 416px;
+  width: 100%;
+  padding-top: 24px;
+}
+
+.button {
+  max-height: 48px;
+  height: 100%;
+  margin-top: 32px;
+  padding: 10px 51px;
+  background: linear-gradient(236.84deg, #9c8bea 1.49%, #544695 105.35%);
+  box-shadow: -4px 4px 15px rgba(129, 103, 227, 0.2);
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+}
+
+@media screen and (max-width: 720px) {
+  .promo {
+    margin-top: 56px;
+    background: url('../../assets/images/mobile-bg.png') no-repeat;
+    background-size: cover;
+    height: 568px;
+  }
+  .container {
+    padding-left: 16px;
+    padding-top: 177px;
+  }
+}

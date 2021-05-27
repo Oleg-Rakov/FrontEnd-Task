@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.slick-slide > div > div {
+  display: flex !important;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 18px;
+  color: rgba(79, 88, 107, 1);
+
+  padding-bottom: 25px;
+  outline: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.slick-slide > div > div > img {
+  max-width: 192px;
+  max-height: 192px;
+  height: 100%;
+  width: 100%;
+}
+.slick-slide > div > div > span {
+  padding: 16px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slick-prev {
+  left: 0% !important;
+  z-index: 1;
+}
+.slick-next {
+  right: 0% !important;
+  z-index: 1;
+}
+
+.slick-list {
+  overflow: visible;
+}
+
+.slick-next,
+.slick-prev {
+  top: 35% !important;
+  background: transparent !important;
+}
+
+.slick-next::before .slice-prev::before {
+  opacity: 1;
+}
+
+.slick-dots {
+  position: static !important;
+}
+
+.slick-dots.slick-thumb {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.slick-dots.slick-thumb li {
+  width: 6px;
+  height: 6px;
+  margin: 0 3px;
+  border-radius: 999px;
+  transition: all 0.5s ease-in-out;
+
+  background-color: black;
+}
+
+.slick-dots.slick-thumb li.slick-active {
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(236.84deg, #9c8bea 1.49%, #544695 105.35%);
+  border-radius: 50%;
+}
+
+.slick-dots li button:before {
+  font-size: 13px !important;
+  color: #544695 !important;
 }

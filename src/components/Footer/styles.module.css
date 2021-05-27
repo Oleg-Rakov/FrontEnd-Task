@@ -1,0 +1,13 @@
+.footer {
+  background: rgba(59, 69, 90, 1);
+  color: white;
+  text-align: center;
+  margin-top: 165px;
+  padding: 64px 0 32px 0;
+}
+
+@media screen and (max-width: 720px) {
+  .footer {
+    margin-top: 56px;
+  }
+}

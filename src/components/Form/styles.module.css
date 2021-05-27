@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 128px;
+  padding-left: 16px;
+  max-width: 1312px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.info {
+  max-width: 528px;
+  width: 100%;
+}
+
+.infoTitle {
+  font-weight: bold;
+  font-size: 32px;
+  color: #4f586b;
+}
+
+.infoDesc {
+  padding-top: 24px;
+  color: #4f586b;
+}
+
+.infoImg {
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    padding-top: 50px;
+    flex-direction: column;
+  }
+  .infoImg > img {
+    max-width: 343px;
+    width: 100%;
+  }
+}
